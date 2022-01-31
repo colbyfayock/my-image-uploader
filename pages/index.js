@@ -41,7 +41,7 @@ export default function Home() {
 
     formData.append('upload_preset', 'my-uploads');
 
-    const data = await fetch('https://api.cloudinary.com/v1_1/colbydemo/image/upload', {
+    const data = await fetch('https://api.cloudinary.com/v1_1/[Your Cloudinary Cloud Name]/image/upload', {
       method: 'POST',
       body: formData
     }).then(r => r.json());
